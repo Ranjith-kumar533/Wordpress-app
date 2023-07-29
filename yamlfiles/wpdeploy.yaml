@@ -47,5 +47,5 @@ spec:
       volumes:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
-          claimName: pvc_claim_wordpress
+          claimName: pvc-claim-wordpress
       
