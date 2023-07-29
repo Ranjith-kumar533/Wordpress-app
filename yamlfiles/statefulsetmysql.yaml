@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  nameSpace: wp-app
+  namespace: wp-app
   name: mysql
 spec:
   selector:
