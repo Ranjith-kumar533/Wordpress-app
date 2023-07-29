@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  nameSpace: wp-app
+  namespace: wp-app
   name: mysql
   labels:
     app: mysql
