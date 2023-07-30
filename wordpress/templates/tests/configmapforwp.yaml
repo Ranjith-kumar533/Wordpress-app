@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  namespace: wp-app
+  namespace: {{ .Values.namespace }}
   name: envcm
 data:
   myusername: 'root'

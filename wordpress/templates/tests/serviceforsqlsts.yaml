@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: wp-app
+  namespace: {{ .Values.namespace }}
   name: mysql
   labels:
     app: mysql
@@ -20,7 +20,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: wp-app
+  namespace: {{ Values.namespace }}
   name: mysql-read
   labels:
     app: mysql

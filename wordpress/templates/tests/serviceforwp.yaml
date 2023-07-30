@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: wp-app
-  name: wp
+  namespace: {{ .Values.namespace }}
+  name: {{ .Values.wordpress.appname }}
   labels:
-    app: wp
+    app: {{ .Values.wordpress.appname }}
 spec:
   selector:
     app: wp
