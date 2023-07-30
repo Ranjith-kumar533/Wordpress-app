@@ -20,7 +20,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: {{ Values.namespace }}
+  namespace: {{ .Values.namespace }}
   name: mysql-read
   labels:
     app: mysql
