@@ -95,6 +95,12 @@ spec:
           initialDelaySeconds: 5
           periodSeconds: 2
           timeoutSeconds: 1
+        livenessProbe:
+          exec:
+            command: ["MYSQL_PWD=$MYSQL_ROOT_PASSWORD mysqladmin ping"]
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
       - name: xtrabackup
         image: gcr.io/google-samples/xtrabackup:1.0
         env:
