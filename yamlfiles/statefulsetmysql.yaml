@@ -138,7 +138,7 @@ spec:
                   -e "$(<change_master_to.sql.in), \
                           MASTER_HOST='mysql-0.mysql', \
                           MASTER_USER='root', \
-                          MASTER_PASSWORD='', \
+                          MASTER_PASSWORD='c2ltcGxpbGVhcm4=', \
                           MASTER_CONNECT_RETRY=10; \
                         START SLAVE;" || exit 1
             # In case of container restart, attempt this at-most-once.
