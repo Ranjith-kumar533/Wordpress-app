@@ -153,7 +153,7 @@ spec:
 
           # Start a server to send backups when requested by peers.
           exec ncat --listen --keep-open --send-only --max-conns=1 3307 -c \
-            "xtrabackup --backup --slave-info --stream=xbstream --host=127.0.0.1 --user=root"          
+            "MYSQL_PWD=$MYSQL_ROOT_PASSWORD xtrabackup --backup --slave-info --stream=xbstream --host=127.0.0.1 --user=root"          
         volumeMounts:
         - name: data
           mountPath: /var/lib/mysql
