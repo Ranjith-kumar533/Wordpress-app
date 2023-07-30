@@ -8,7 +8,7 @@ metadata:
   nginx.ingress.kubernetes.io/rewrite-target: /
 spec: 
   rules:
-    - host: wp.com
+    - host: ranjith.com
       http:
         paths:
           - path: /
