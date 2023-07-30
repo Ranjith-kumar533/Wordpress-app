@@ -4,17 +4,17 @@ metadata:
   namespace: {{ .Values.namespace }}
   creationTimestamp: null
   labels:
-    app: {{ .Values.wordpress.appname }}
-  name: {{ .Values.wordpress.appname }}
+    app: {{ $.Values.wordpress.appname }}
+  name: {{ $.Values.wordpress.appname }}
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: {{ .Values.wordpress.appname }}
+      app: {{ $.Values.wordpress.appname }}
   template:
     metadata:
       labels:
-        app: {{ .Values.wordpress.appname }}
+        app: {{ $.Values.wordpress.appname }}
     spec:
       initContainers:
       - name: init-mysql
