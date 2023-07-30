@@ -90,7 +90,7 @@ spec:
             memory: 1Gi
         livenessProbe:
           exec:
-            command: ["MYSQL_PWD=$MYSQL_ROOT_PASSWORD", "mysqladmin", "-h", "127.0.0.1", "ping"]
+            command: ["MYSQL_PWD=$MYSQL_ROOT_PASSWORD", "mysqladmin", "ping"]
           initialDelaySeconds: 30
           periodSeconds: 10
           timeoutSeconds: 5
